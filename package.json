@@ -1,0 +1,29 @@
+{
+  "name": "kirby-tinymce-field",
+  "description": "Integrates the powerful TinyMCE editor into Kirby 3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel watch src/index.js --no-source-maps -d ./",
+    "build": "parcel build src/index.js --no-source-maps --experimental-scope-hoisting -d ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:clicktonext/kirby-tinymce-field.git"
+  },
+  "posthtml": {
+    "recognizeSelfClosing": true
+  },
+  "dependencies": {
+    "@tinymce/tinymce-vue": "^3.0",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@vue/component-compiler-utils": "^3.2.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "vue-template-compiler": "^2.6.13"
+  }
+}
