@@ -72,6 +72,7 @@ export default {
         image_advtab: app.imageAdvanceTab,
         placeholder: app.placeholder,
         plugins: app.plugins,
+        selector: 'textarea',
         toolbar: app.toolbar,
         relative_urls: false,
         setup: function (editor) {
