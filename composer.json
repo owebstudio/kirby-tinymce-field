@@ -29,6 +29,7 @@
     "sort-packages": true
   },
   "require": {
+    "php": "^7.4|^8.0",
     "getkirby/composer-installer": "^1.2"
   },
   "minimum-stability": "dev",

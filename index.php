@@ -17,9 +17,6 @@ Kirby::plugin('clicktonext/tinymce', [
                 'imageAdvanceTab' => function (bool $imageAdvanceTab = true) {
                     return $imageAdvanceTab;
                 },
-                'maxlength' => function (?int $maxlength = null) {
-                    return $maxlength;
-                },
                 'menubar' => function ($menubar = null) {
                     return $menubar;
                 },
@@ -33,7 +30,7 @@ Kirby::plugin('clicktonext/tinymce', [
                     return $toolbar;
                 },
                 'value' => function (?string $value = null) {
-                    return trim($value);
+                    return trim($value ?? '');
                 }
             ],
             'computed' => [
@@ -54,16 +51,23 @@ Kirby::plugin('clicktonext/tinymce', [
                         ]);
                 },
                 'toolbar' => function () {
-                    return $this->toolbar ?? option('clicktonext.tinymce.toolbar', implode(' | ', [
-                            'undo redo',
-                            'formatselect',
-                            'bold italic forecolor backcolor',
-                            'alignleft aligncenter',
-                            'alignright alignjustify',
-                            'bullist numlist outdent indent',
-                            'removeformat',
-                            'code fullscreen',
-                        ]));
+                    $default = [
+                        'undo redo',
+                        'formatselect',
+                        'bold italic forecolor backcolor',
+                        'alignleft aligncenter',
+                        'alignright alignjustify',
+                        'bullist numlist outdent indent',
+                        'removeformat',
+                        'code fullscreen',
+                    ];
+
+                    $toolbar = $this->toolbar ?? option('clicktonext.tinymce.toolbar', $default);
+                    if (is_array($toolbar) === true) {
+                        $toolbar = implode(' | ', $toolbar);
+                    }
+
+                    return $toolbar;
                 },
             ]
         ]
