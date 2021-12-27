@@ -1,6 +1,9 @@
 # Kirby TinyMCE Field
 
-Integrates the powerful TinyMCE editor into Kirby 3.
+Integrates the powerful **TinyMCE 5** editor into Kirby 3. 
+
+All the documentation about Plates template engine is in [the official documentation](https://www.tiny.cloud/docs/). You can find information in documents about getting API KEY: [Quick start](https://www.tiny.cloud/docs/quick-start/)
+
 
 ![preview](https://user-images.githubusercontent.com/3393422/136708309-81f4914d-5ff5-4ec4-8af0-3154ebfdfe81.png)
 
