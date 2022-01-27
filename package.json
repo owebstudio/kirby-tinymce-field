@@ -1,9 +1,9 @@
 {
   "name": "kirby-tinymce-field",
-  "description": "Integrates the powerful TinyMCE editor into Kirby 3",
+  "description": "Integrates the powerful TinyMCE wysiwyg editor into Kirby 3.",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "proprietary",
   "scripts": {
     "dev": "parcel watch src/index.js --no-source-maps -d ./",
     "build": "parcel build src/index.js --no-source-maps --experimental-scope-hoisting -d ./"

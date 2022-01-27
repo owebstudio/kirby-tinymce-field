@@ -1,6 +1,6 @@
 # Kirby TinyMCE Field
 
-Integrates the powerful **TinyMCE 5** editor into Kirby 3. 
+Integrates the powerful **TinyMCE 5** wysiwyg editor into Kirby 3. 
 
 All the documentation about Plates template engine is in [the official documentation](https://www.tiny.cloud/docs/). You can find information in documents about getting API KEY: [Quick start](https://www.tiny.cloud/docs/quick-start/)
 
@@ -9,23 +9,9 @@ All the documentation about Plates template engine is in [the official documenta
 
 ## Installation
 
-### Standalone
-
 1. Download the latest release
 2. Unzip downloaded file
 3. Copy/paste unzipped folder in your `/site/plugins` folder
-
-### Installation with composer
-
-```ssh
-composer require clicktonext/kirby-tinymce-field
-```
-
-### Add as git submodule
-
-```ssh
-git submodule add https://github.com/clicktonext/kirby-tinymce-field.git site/plugins/kirby-tinymce-field
-```
 
 ## Usage
 

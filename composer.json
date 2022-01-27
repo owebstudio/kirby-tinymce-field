@@ -1,15 +1,18 @@
 {
   "name": "clicktonext/kirby-tinymce-field",
-  "description": "Integrates the powerful TinyMCE editor into Kirby 3",
+  "description": "Integrates the powerful TinyMCE wysiwyg editor into Kirby 3.",
   "type": "kirby-plugin",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "proprietary",
   "keywords": [
     "kirby",
     "kirby-3",
     "kirby3-plugin",
     "kirby-plugin",
+    "clicktonext-plugin",
     "kirby-tinymce",
+    "wysiwyg",
+    "editor",
     "tinymce"
   ],
   "homepage": "https://clicktonext.com",
@@ -31,6 +34,9 @@
   "require": {
     "php": "^7.4|^8.0",
     "getkirby/composer-installer": "^1.2"
+  },
+  "extra": {
+    "installer-name": "kirby-tinymce-field"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
