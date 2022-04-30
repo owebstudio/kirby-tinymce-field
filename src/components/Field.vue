@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import "@babel/polyfill"
+import "regenerator-runtime/runtime";
 import Editor from "@tinymce/tinymce-vue"
 
 export default {
   inheritAttrs: false,
   components: {
-    "editor": Editor
+    editor: Editor
   },
   props: {
     autofocus: Boolean,

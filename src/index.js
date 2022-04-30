@@ -1,7 +1,7 @@
 import Field from "./components/Field.vue";
 
-panel.plugin("afbora/tinymce", {
-  fields: {
-    tinymce: Field
-  }
+panel.plugin("clicktonext/kirby-tinymce-field", {
+    fields: {
+        tinymce: Field
+    }
 });
