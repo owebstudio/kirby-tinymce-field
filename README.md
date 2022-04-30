@@ -36,7 +36,7 @@ fields:
 | plugins | array | Used to include plugins for the editor.                                                                               |
 | toolbar | string array | Allows you to specify the buttons and the order that they will appear on TinyMCE’s toolbar                            |
 
-All the values can be updated in the `config.php` file with prefixed `clicktonext.tinymce.`.
+All the values can be updated in the `config.php` file with prefixed `clicktonext.tinymce.`
 
 ## Defaults
 
@@ -50,4 +50,17 @@ All the values can be updated in the `config.php` file with prefixed `clicktonex
 | plugins | ['advlist autolink lists link image charmap print preview anchor', 'searchreplace visualblocks code fullscreen', 'insertdatetime media table paste code help wordcount'] |
 | toolbar | undo redo &#124; formatselect &#124; bold italic forecolor backcolor &#124; alignleft aligncenter &#124; alignright alignjustify &#124; bullist numlist outdent indent &#124; removeformat &#124; code fullscreen |
 
+## Sample options
+
+```php
+<?php
+
+// /site/config/config.php
+return [
+    'clicktonext.tinymce' => [
+        'apiKey' => 'YOUR_API_KEY',
+        'height' => 750,
+    ]
+];
+```
 
