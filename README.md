@@ -36,7 +36,7 @@ fields:
 | plugins | array | Used to include plugins for the editor.                                                                               |
 | toolbar | string array | Allows you to specify the buttons and the order that they will appear on TinyMCE’s toolbar                            |
 
-All the values can be updated in the `config.php` file with prefixed `clicktonext.tinymce.`
+All the values can be updated in the `config.php` file with prefixed `kirbynext.tinymce.`
 
 ## Defaults
 
@@ -57,7 +57,7 @@ All the values can be updated in the `config.php` file with prefixed `clicktonex
 
 // /site/config/config.php
 return [
-    'clicktonext.tinymce' => [
+    'kirbynext.tinymce' => [
         'apiKey' => 'YOUR_API_KEY',
         'height' => 750,
     ]

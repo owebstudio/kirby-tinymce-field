@@ -1,16 +1,17 @@
 {
   "name": "kirby-tinymce-field",
   "description": "Integrates the powerful TinyMCE wysiwyg editor into Kirby 3.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "index.js",
-  "license": "proprietary",
+  "author": "Kirby Next <contact@kirbynext.com> (https://kirbynext.com)",
+  "license": "MIT",
   "scripts": {
-    "dev": "parcel watch src/index.js --no-source-maps -d ./",
-    "build": "parcel build src/index.js --no-source-maps --experimental-scope-hoisting -d ./"
+    "dev": "npx -y kirbyup src/index.js --watch",
+    "build": "npx -y kirbyup src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:clicktonext/kirby-tinymce-field.git"
+    "url": "git@github.com:kirbynext/kirby-tinymce-field.git"
   },
   "posthtml": {
     "recognizeSelfClosing": true
