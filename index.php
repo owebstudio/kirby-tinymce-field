@@ -2,7 +2,7 @@
 
 use Kirby\Cms\App as Kirby;
 
-Kirby::plugin('kirbynext/tinymce', [
+Kirby::plugin('owebstudio/tinymce', [
     'fields' => [
         'tinymce' => [
             'props' => [
@@ -35,16 +35,16 @@ Kirby::plugin('kirbynext/tinymce', [
             ],
             'computed' => [
                 'apiKey' => function () {
-                    return option('kirbynext.tinymce.apiKey');
+                    return option('owebstudio.tinymce.apiKey');
                 },
                 'height' => function () {
-                    return $this->height ?? option('kirbynext.tinymce.height', 500);
+                    return $this->height ?? option('owebstudio.tinymce.height', 500);
                 },
                 'menubar' => function () {
-                    return $this->menubar ?? option('kirbynext.tinymce.menubar', 'file edit view insert format tools table tc help');
+                    return $this->menubar ?? option('owebstudio.tinymce.menubar', 'file edit view insert format tools table tc help');
                 },
                 'plugins' => function () {
-                    return $this->plugins ?? option('kirbynext.tinymce.plugins', [
+                    return $this->plugins ?? option('owebstudio.tinymce.plugins', [
                             'advlist autolink lists link image charmap print preview anchor',
                             'searchreplace visualblocks code fullscreen',
                             'insertdatetime media table paste code help wordcount'
@@ -62,7 +62,7 @@ Kirby::plugin('kirbynext/tinymce', [
                         'code fullscreen',
                     ];
 
-                    $toolbar = $this->toolbar ?? option('kirbynext.tinymce.toolbar', $default);
+                    $toolbar = $this->toolbar ?? option('owebstudio.tinymce.toolbar', $default);
                     if (is_array($toolbar) === true) {
                         $toolbar = implode(' | ', $toolbar);
                     }

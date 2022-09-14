@@ -1,30 +1,30 @@
 {
-  "name": "kirbynext/kirby-tinymce-field",
+  "name": "owebstudio/kirby-tinymce-field",
   "description": "Integrates the powerful TinyMCE wysiwyg editor into Kirby 3.",
   "type": "kirby-plugin",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "keywords": [
-    "kirbynext",
+    "owebstudio",
+    "owebstudio-plugin",
     "kirby",
     "kirby-3",
     "kirby3-plugin",
     "kirby-plugin",
-    "kirbynext-plugin",
     "kirby-tinymce",
     "wysiwyg",
     "editor",
     "tinymce"
   ],
-  "homepage": "https://kirbynext.com",
+  "homepage": "https://owebstudio.com",
   "support": {
-    "email": "support@kirbynext.com"
+    "email": "support@owebstudio.com"
   },
   "authors": [
     {
-      "name": "Kirby Next",
-      "email": "contact@kirbynext.com",
-      "homepage": "https://kirbynext.com"
+      "name": "oweb studio",
+      "email": "contact@owebstudio.com",
+      "homepage": "https://owebstudio.com"
     }
   ],
   "config": {
