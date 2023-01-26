@@ -16,14 +16,14 @@
     "recognizeSelfClosing": true
   },
   "dependencies": {
-    "@tinymce/tinymce-vue": "^3.0"
+    "@tinymce/tinymce-vue": "^3.2.8"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@vue/component-compiler-utils": "^3.2.0",
+    "@babel/core": "^7.20.12",
+    "@vue/component-compiler-utils": "^3.3.0",
     "babel-plugin-transform-regenerator": "^6.26.0",
-    "regenerator-runtime": "^0.13.9",
+    "regenerator-runtime": "^0.13.11",
     "vue-hot-reload-api": "^2.3.4",
-    "vue-template-compiler": "^2.6.13"
+    "vue-template-compiler": "^2.7.14"
   }
 }
