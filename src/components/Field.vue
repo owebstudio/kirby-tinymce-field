@@ -65,6 +65,7 @@ export default {
   computed: {
     init() {
       let app = this;
+      const extend = panel.plugins.thirdParty.tinymce || {};
 
       return {
         height: app.height,
@@ -88,7 +89,8 @@ export default {
         image_list: async function (success) {
           let list = await app.imageList();
           success(list);
-        }
+        },
+        ...extend
       };
     }
   }

@@ -2,8 +2,7 @@
 
 Integrates the powerful **TinyMCE 5** wysiwyg editor into Kirby 3.
 
-All the documentation about Plates template engine is in [the official documentation](https://www.tiny.cloud/docs/). You can find information in documents about getting API
-KEY: [Quick start](https://www.tiny.cloud/docs/quick-start/)
+All the documentation about Plates template engine is in [the official documentation](https://www.tiny.cloud/docs/). You can find information in documents about getting API KEY: [Quick start](https://www.tiny.cloud/docs/quick-start/)
 
 ![preview](https://user-images.githubusercontent.com/3393422/136708309-81f4914d-5ff5-4ec4-8af0-3154ebfdfe81.png)
 
@@ -59,8 +58,37 @@ All the values can be updated in the `config.php` file with prefixed `owebstudio
 return [
     'owebstudio.tinymce' => [
         'apiKey' => 'YOUR_API_KEY',
-        'height' => 750,
+        'height' => 750
     ]
 ];
+```
+
+## Extending the plugin
+
+If you want to extend the TinyMCE instance, you can do it by creating a sample plugin like the example below:
+
+### Custom formatting examples
+
+- https://www.tiny.cloud/docs/demo/format-custom/
+- https://www.tiny.cloud/docs/configure/content-formatting/
+
+### Sample plugin
+
+```javascript
+panel.plugin("owebstudio/tinymce-extend", {
+    thirdParty: {
+        tinymce: {
+            formats: {
+                // Changes the default format for h1 to have a class of heading
+                h1: {block: 'h1', classes: 'heading'}
+            },
+            style_formats: [
+                // Adds the h1 format defined above to style_formats
+                {title: 'My heading', format: 'h1'}
+            ]
+        }
+    }
+});
+
 ```
 
