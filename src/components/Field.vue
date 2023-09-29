@@ -45,7 +45,7 @@ export default {
     onInput(value) {
       this.$emit("input", value);
     },
-    async imageList() {
+    async filesList() {
       let list = [];
 
       await this.$api
@@ -87,7 +87,11 @@ export default {
           );
         },
         image_list: async function (success) {
-          let list = await app.imageList();
+          let list = await app.filesList();
+          success(list);
+        },
+        link_list: async function (success) {
+          let list = await app.filesList();
           success(list);
         },
         ...extend

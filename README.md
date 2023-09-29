@@ -16,11 +16,11 @@ All the documentation about Plates template engine is in [the official documenta
 
 ```yaml
 fields:
-    text:
-        type: tinymce
-        label: "Content"
-        placeholder: "Enter text.."
-        height: 750
+  text:
+    type: tinymce
+    label: "Content"
+    placeholder: "Enter text.."
+    height: 750
 ```
 
 ## Options
