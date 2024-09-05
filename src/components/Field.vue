@@ -45,7 +45,7 @@ export default {
     onInput(value) {
       this.$emit("input", value);
     },
-    async filesList() {
+    async imageList() {
       let list = [];
 
       await this.$api
@@ -76,6 +76,8 @@ export default {
         selector: 'textarea',
         toolbar: app.toolbar,
         relative_urls: false,
+        toolbar_mode: 'sliding',
+        ui_mode: 'split',
         setup: function (editor) {
           editor.addShortcut(
               'ctrl+s', 'Custom save for WIN', function ($event) {
@@ -85,13 +87,16 @@ export default {
                 app.$emit("submit", $event);
               }
           );
+
+          // fix menubar of dropdown items for K4
+          editor.on('PostRender', function () {
+            let container = editor.getContainer();
+            let uiContainer = document.querySelector('body > .tox.tox-tinymce-aux');
+            container.parentNode.appendChild(uiContainer);
+          });
         },
         image_list: async function (success) {
-          let list = await app.filesList();
-          success(list);
-        },
-        link_list: async function (success) {
-          let list = await app.filesList();
+          let list = await app.imageList();
           success(list);
         },
         ...extend
@@ -100,3 +105,14 @@ export default {
   }
 }
 </script>
+
+<style>
+.tox-fullscreen .k-grid:where([data-variant=columns],
+.tox-fullscreen [data-variant=fields]) > * {
+  container: none;
+}
+
+.tox.tox-tinymce.tox-fullscreen {
+  width: 100% !important;
+}
+</style>
