@@ -1,5 +1,7 @@
 <?php
 
+use Oweb\Tinymce\License\License;
+
 return [
     'tinymce' => [
         'props' => [
@@ -23,6 +25,12 @@ return [
             'plugins' => function (array|null $plugins = null) {
                 return $plugins;
             },
+            /**
+             * A locked editor can't be filled in, so it must not block saving the page
+             */
+            'required' => function (bool|null $required = null) {
+                return ($required ?? false) && License::for('owebstudio/tinymce')->isLocked() === false;
+            },
             'toolbar' => function (string|null $toolbar = null) {
                 return $toolbar;
             },
@@ -39,6 +47,9 @@ return [
             },
             'imageAdvanceTab' => function () {
                 return $this->imageAdvanceTab ?? option('owebstudio.tinymce.imageAdvanceTab');
+            },
+            'license' => function () {
+                return License::for('owebstudio/tinymce')->panel();
             },
             'menubar' => function () {
                 return $this->menubar ?? option('owebstudio.tinymce.menubar');
