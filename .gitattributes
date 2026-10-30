@@ -3,3 +3,4 @@
 preview.png export-ignore
 src export-ignore
 .npmrc export-ignore
+/.github export-ignore
