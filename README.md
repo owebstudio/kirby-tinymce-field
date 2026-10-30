@@ -1,5 +1,7 @@
 # Kirby TinyMCE Field
 
+[![Buy a license for €29.99](https://img.shields.io/badge/Buy_a_license-%E2%82%AC29.99-7c3aed?style=for-the-badge)](https://owebstudio.lemonsqueezy.com/checkout/buy/1f3ad982-7cfa-4f53-a1c2-fc2d12d80b2f)
+
 Integrates the powerful **TinyMCE 5** wysiwyg editor into Kirby.
 
 All the documentation about TinyMCE is in [the official documentation](https://www.tiny.cloud/docs/). You can find information in documents about getting API KEY: [Quick start](https://www.tiny.cloud/docs/quick-start/)
@@ -102,7 +104,7 @@ panel.plugin("owebstudio/tinymce-extend", {
 
 ## License
 
-TinyMCE Editor is a commercial plugin. It is free to use on your local computer and on staging sites. A live site needs a license key: buy it on [owebstudio.com](https://owebstudio.com/kirby/plugins/tinymce-editor) and activate it with the button in the field's notice, or in the Panel's System view (Kirby 5 and newer) by clicking the license status of the plugin.
+TinyMCE Editor is a commercial plugin. It is free to use on your local computer and on staging sites. A live site needs a license key: [buy a license](https://owebstudio.lemonsqueezy.com/checkout/buy/1f3ad982-7cfa-4f53-a1c2-fc2d12d80b2f) and activate it with the button in the field's notice, or in the Panel's System view (Kirby 5 and newer) by clicking the license status of the plugin.
 
 Without a license key, the editor is read-only on a live site and shows a notice. Your content stays visible and your website keeps working.
 
