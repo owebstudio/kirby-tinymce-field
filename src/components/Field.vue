@@ -80,14 +80,10 @@ export default {
         toolbar_mode: 'sliding',
         ui_mode: 'split',
         setup: function (editor) {
-          editor.addShortcut(
-              'ctrl+s', 'Custom save for WIN', function ($event) {
-                app.$emit("submit", $event);
-              },
-              'cmd+s', 'Custom save for MAC', function ($event) {
-                app.$emit("submit", $event);
-              }
-          );
+          // meta is Cmd on Mac and Ctrl on other systems
+          editor.addShortcut('meta+s', 'Save', function () {
+            app.$emit("submit");
+          });
 
           // fix menubar of dropdown items for K4
           editor.on('PostRender', function () {
