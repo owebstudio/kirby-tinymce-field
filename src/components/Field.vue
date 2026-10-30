@@ -6,6 +6,7 @@
     <editor
         ref="input"
         :api-key="apiKey"
+        :disabled="disabled"
         :id="_uid"
         :init="init"
         :value="value"
