@@ -38,7 +38,7 @@ return [
                 return $this->height ?? option('owebstudio.tinymce.height');
             },
             'imageAdvanceTab' => function () {
-                return $this->imageAdvanceTab ?? option('owebstudio.tinymce.height');
+                return $this->imageAdvanceTab ?? option('owebstudio.tinymce.imageAdvanceTab');
             },
             'menubar' => function () {
                 return $this->menubar ?? option('owebstudio.tinymce.menubar');
