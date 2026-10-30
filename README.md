@@ -1,3 +1,5 @@
+![TinyMCE Field, a Kirby plugin by oweb studio. The powerful TinyMCE editor as a field in the Panel.](.github/cover.png)
+
 # Kirby TinyMCE Field
 
 [![Buy a license for €29.99](https://img.shields.io/badge/Buy_a_license-%E2%82%AC29.99-7c3aed?style=for-the-badge)](https://owebstudio.lemonsqueezy.com/checkout/buy/1f3ad982-7cfa-4f53-a1c2-fc2d12d80b2f)
