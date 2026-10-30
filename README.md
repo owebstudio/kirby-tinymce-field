@@ -2,7 +2,7 @@
 
 Integrates the powerful **TinyMCE 5** wysiwyg editor into Kirby.
 
-All the documentation about Plates template engine is in [the official documentation](https://www.tiny.cloud/docs/). You can find information in documents about getting API KEY: [Quick start](https://www.tiny.cloud/docs/quick-start/)
+All the documentation about TinyMCE is in [the official documentation](https://www.tiny.cloud/docs/). You can find information in documents about getting API KEY: [Quick start](https://www.tiny.cloud/docs/quick-start/)
 
 ![preview](https://user-images.githubusercontent.com/3393422/136708309-81f4914d-5ff5-4ec4-8af0-3154ebfdfe81.png)
 
@@ -12,6 +12,7 @@ All the documentation about Plates template engine is in [the official documenta
 |:--------------|:--------------------------|
 | ^3.6          | ^1.0                      |
 | ^4.0          | ^2.0                      |
+| ^5.0          | ^2.0                      |
 
 ## Installation
 
@@ -99,3 +100,12 @@ panel.plugin("owebstudio/tinymce-extend", {
 
 ```
 
+## License
+
+TinyMCE Editor is a commercial plugin. It is free to use on your local computer and on staging sites. A live site needs a license key: buy it on [owebstudio.com](https://owebstudio.com/kirby/plugins/tinymce-editor) and activate it with the button in the field's notice, or in the Panel's System view (Kirby 5 and newer) by clicking the license status of the plugin.
+
+Without a license key, the editor is read-only on a live site and shows a notice. Your content stays visible and your website keeps working.
+
+[oweb studio Commercial License](LICENSE.md). Versions released under the MIT license stay MIT. The current license is available at https://owebstudio.com/license.
+
+TinyMCE itself is loaded from Tiny Cloud and needs your own API key, see [Options](#options).

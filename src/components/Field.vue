@@ -3,10 +3,23 @@
       :input="_uid"
       v-bind="$props"
       class="k-tinymce-field">
+    <k-box
+        v-if="isLocked"
+        :theme="license.theme"
+        class="k-tinymce-field-license">
+      <k-text>{{ license.message }}</k-text>
+      <k-button
+          v-if="license.dialog"
+          :dialog="license.dialog"
+          icon="key"
+          size="sm">
+        {{ license.button }}
+      </k-button>
+    </k-box>
     <editor
         ref="input"
         :api-key="apiKey"
-        :disabled="disabled"
+        :disabled="disabled || isLocked"
         :id="_uid"
         :init="init"
         :value="value"
@@ -33,6 +46,7 @@ export default {
     id: [Number, String],
     imageAdvanceTab: Boolean,
     label: String,
+    license: Object,
     menubar: [Boolean, String],
     name: [Number, String],
     placeholder: String,
@@ -100,12 +114,19 @@ export default {
         },
         ...extend
       };
+    },
+    isLocked() {
+      return this.license?.locked === true;
     }
   }
 }
 </script>
 
 <style>
+.k-tinymce-field-license {
+  margin-bottom: var(--spacing-2);
+}
+
 .tox-fullscreen .k-grid:where([data-variant=columns],
 .tox-fullscreen [data-variant=fields]) > * {
   container: none;
