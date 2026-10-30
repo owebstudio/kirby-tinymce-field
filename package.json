@@ -19,12 +19,7 @@
     "@tinymce/tinymce-vue": "^3.2.8"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.12",
-    "@vue/component-compiler-utils": "^3.3.0",
-    "babel-plugin-transform-regenerator": "^6.26.0",
     "kirbyup": "3.5.0",
-    "regenerator-runtime": "^0.13.11",
-    "vue-hot-reload-api": "^2.3.4",
-    "vue-template-compiler": "^2.7.14"
+    "regenerator-runtime": "^0.13.11"
   }
 }
