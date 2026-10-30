@@ -108,6 +108,6 @@ TinyMCE Editor is a commercial plugin. It is free to use on your local computer 
 
 Without a license key, the editor is read-only on a live site and shows a notice. Your content stays visible and your website keeps working.
 
-[oweb studio Commercial License](LICENSE.md). Versions released under the MIT license stay MIT. The current license is available at https://owebstudio.com/license.
+[oweb studio Commercial License](LICENSE.md). Versions released under the MIT license stay MIT. The current license is available at https://github.com/owebstudio/.github/blob/main/LICENSE.md.
 
 TinyMCE itself is loaded from Tiny Cloud and needs your own API key, see [Options](#options).
