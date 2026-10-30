@@ -38,7 +38,10 @@
     "owebstudio/kirby-license": "^1.0"
   },
   "extra": {
-    "installer-name": "kirby-tinymce-field"
+    "installer-name": "kirby-tinymce-field",
+    "kirby": {
+      "compatible": "^4.0 || ^5.0"
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true
