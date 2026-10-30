@@ -88,7 +88,10 @@ export default {
           editor.on('PostRender', function () {
             let container = editor.getContainer();
             let uiContainer = document.querySelector('body > .tox.tox-tinymce-aux');
-            container.parentNode.appendChild(uiContainer);
+
+            if (uiContainer) {
+              container.parentNode.appendChild(uiContainer);
+            }
           });
         },
         image_list: async function (success) {
