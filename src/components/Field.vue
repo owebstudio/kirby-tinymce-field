@@ -135,4 +135,13 @@ export default {
 .tox.tox-tinymce.tox-fullscreen {
   width: 100% !important;
 }
+
+/* scroll areas of drawers clip the fullscreen editor and dialogs:
+   the fade mask in Kirby 5 and translateZ in Kirby 4 */
+.tox-fullscreen :is(.k-scrollable, .scroll-y-auto),
+.tox-dialog__disable-scroll :is(.k-scrollable, .scroll-y-auto) {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  transform: none !important;
+}
 </style>

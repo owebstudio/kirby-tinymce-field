@@ -13,7 +13,7 @@
     "editor",
     "tinymce"
   ],
-  "homepage": "https://owebstudio.com",
+  "homepage": "https://github.com/owebstudio/kirby-tinymce-field",
   "support": {
     "email": "support@owebstudio.com"
   },
@@ -21,7 +21,7 @@
     {
       "name": "oweb studio",
       "email": "contact@owebstudio.com",
-      "homepage": "https://owebstudio.com"
+      "homepage": "https://github.com/owebstudio"
     }
   ],
   "config": {
@@ -34,7 +34,7 @@
     "getkirby/composer-installer": "^1.2"
   },
   "require-dev": {
-    "owebstudio/kirby-license": "^1.0"
+    "owebstudio/kirby-license": "^1.0.1"
   },
   "extra": {
     "installer-name": "kirby-tinymce-field",
