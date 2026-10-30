@@ -99,3 +99,12 @@ panel.plugin("owebstudio/tinymce-extend", {
 
 ```
 
+## License
+
+TinyMCE Editor is a commercial plugin. It is free to use on your local computer and on staging sites. A live site needs a license key: buy it on [owebstudio.com](https://owebstudio.com/kirby/plugins/tinymce-editor) and activate it with the button in the field's notice, or in the Panel's System view (Kirby 5 and newer) by clicking the license status of the plugin.
+
+Without a license key, the editor is read-only on a live site and shows a notice. Your content stays visible and your website keeps working.
+
+[oweb studio Commercial License](LICENSE.md). Versions released under the MIT license stay MIT. The current license is available at https://owebstudio.com/license.
+
+TinyMCE itself is loaded from Tiny Cloud and needs your own API key, see [Options](#options).
