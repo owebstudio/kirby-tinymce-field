@@ -3,7 +3,7 @@
   "description": "Integrates the powerful TinyMCE wysiwyg editor into Kirby 3.",
   "main": "index.js",
   "author": "oweb studio <contact@owebstudio.com> (https://owebstudio.com)",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
     "dev": "kirbyup src/index.js --watch",
     "build": "kirbyup src/index.js"
