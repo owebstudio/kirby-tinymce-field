@@ -2,7 +2,7 @@
   "name": "kirby-tinymce-field",
   "description": "Integrates the powerful TinyMCE wysiwyg editor into Kirby.",
   "main": "index.js",
-  "author": "oweb studio <contact@owebstudio.com> (https://owebstudio.com)",
+  "author": "oweb studio <contact@owebstudio.com> (https://github.com/owebstudio)",
   "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
     "dev": "kirbyup src/index.js --watch",
