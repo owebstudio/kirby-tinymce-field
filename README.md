@@ -12,6 +12,7 @@ All the documentation about Plates template engine is in [the official documenta
 |:--------------|:--------------------------|
 | ^3.6          | ^1.0                      |
 | ^4.0          | ^2.0                      |
+| ^5.0          | ^2.0                      |
 
 ## Installation
 
