@@ -10,7 +10,6 @@
         :id="_uid"
         :init="init"
         :value="value"
-        v-on="$listeners"
         @input="onInput"
     />
   </k-field>
