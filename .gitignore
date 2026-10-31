@@ -6,3 +6,4 @@ package-lock.json
 .DS_Store
 node_modules
 vendor
+index.dev.js

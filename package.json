@@ -5,21 +5,14 @@
   "author": "oweb studio <contact@owebstudio.com> (https://github.com/owebstudio)",
   "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
-    "dev": "kirbyup src/index.js --watch",
+    "dev": "kirbyup dev src/index.js",
     "build": "kirbyup src/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:owebstudio/kirby-tinymce-field.git"
   },
-  "posthtml": {
-    "recognizeSelfClosing": true
-  },
-  "dependencies": {
-    "@tinymce/tinymce-vue": "^3.2.8"
-  },
   "devDependencies": {
-    "kirbyup": "3.5.0",
-    "regenerator-runtime": "^0.13.11"
+    "kirbyup": "4.0.0-beta.1"
   }
 }
