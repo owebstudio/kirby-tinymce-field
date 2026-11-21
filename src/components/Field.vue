@@ -73,6 +73,9 @@ export default {
     };
   },
   computed: {
+    isDark() {
+      return this.$panel.theme.current === "dark";
+    },
     isLocked() {
       return this.license?.locked === true;
     },
@@ -81,6 +84,15 @@ export default {
     }
   },
   watch: {
+    isDark() {
+      // TinyMCE can't switch its skin, so the editor starts again
+      if (this.editor) {
+        this.editor.remove();
+        this.editor = null;
+        this.$refs.input.value = this.html ?? "";
+        this.init();
+      }
+    },
     isReadonly(readonly) {
       this.editor?.mode.set(readonly ? "readonly" : "design");
     },
@@ -96,30 +108,8 @@ export default {
     this.editor = null;
     this.html = this.value;
   },
-  async mounted() {
-    if (!this.script) {
-      this.error = this.$t("owebstudio.tinymce.error.setup");
-      return;
-    }
-
-    try {
-      const tinymce = await load(this.script);
-
-      if (this.isUnmounted) {
-        return;
-      }
-
-      const editors = await tinymce.init(this.options());
-
-      if (this.isUnmounted) {
-        editors.forEach((editor) => editor.remove());
-      }
-    } catch (error) {
-      console.error(error);
-      this.error = this.$t("owebstudio.tinymce.error.load", {
-        src: this.script.src
-      });
-    }
+  mounted() {
+    this.init();
   },
   beforeUnmount() {
     this.isUnmounted = true;
@@ -127,6 +117,31 @@ export default {
     this.editor = null;
   },
   methods: {
+    async init() {
+      if (!this.script) {
+        this.error = this.$t("owebstudio.tinymce.error.setup");
+        return;
+      }
+
+      try {
+        const tinymce = await load(this.script);
+
+        if (this.isUnmounted) {
+          return;
+        }
+
+        const editors = await tinymce.init(this.options());
+
+        if (this.isUnmounted) {
+          editors.forEach((editor) => editor.remove());
+        }
+      } catch (error) {
+        console.error(error);
+        this.error = this.$t("owebstudio.tinymce.error.load", {
+          src: this.script.src
+        });
+      }
+    },
     async images() {
       if (!this.endpoints?.model) {
         return [];
@@ -152,6 +167,7 @@ export default {
 
       return {
         target: this.$refs.input,
+        content_css: this.isDark ? "dark" : "default",
         height: this.height,
         menubar: this.menubar,
         image_advtab: this.imageAdvanceTab,
@@ -162,6 +178,7 @@ export default {
         promotion: false,
         readonly: this.isReadonly,
         relative_urls: false,
+        skin: this.isDark ? "oxide-dark" : "oxide",
         toolbar: this.toolbar,
         toolbar_mode: "sliding",
         ui_mode: "split",
