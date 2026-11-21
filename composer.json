@@ -2,6 +2,7 @@
   "name": "owebstudio/kirby-tinymce-field",
   "description": "Integrates the powerful TinyMCE wysiwyg editor into Kirby.",
   "type": "kirby-plugin",
+  "version": "3.0.1",
   "license": "proprietary",
   "keywords": [
     "owebstudio",
