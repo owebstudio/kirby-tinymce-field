@@ -2,9 +2,9 @@
 
 namespace Oweb\Tinymce;
 
+use Kirby\Cms\Url;
 use Kirby\Form\Field\InputField;
 use Kirby\Form\Mixin;
-use Kirby\Http\Url;
 use Kirby\Reflection\Attributes\Prop;
 use Oweb\Tinymce\License\License;
 
