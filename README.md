@@ -79,6 +79,8 @@ fields:
         height: 750
 ```
 
+The editor follows the light or dark theme of the Panel. To use other skins, set `skin` and `content_css` in a plugin, see [Extending the plugin](#extending-the-plugin).
+
 ## Options
 
 | Option          | Type                 | Description                                                                                                                                   |
